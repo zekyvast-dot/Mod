@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://accumulaterehearsehealing.com/af/48/1d/af481d2324aca0e94760fa5b1d337715.js"></script>
+
+    <title>KZ MOD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f9ff;
+        }
+
+        /* === HALAMAN PERTAMA === */
+        #page1 {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Banner Iklan Adsterra */
+        .adsterra-banner {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffe4cc;
+            border: 3px solid #ff8c00;
+            overflow: hidden;
+            padding: 10px 0;
+        }
+
+        .banner-top {
+            border-bottom: 3px solid #ff8c00;
+        }
+
+        .banner-bottom {
+            border-top: 3px solid #ff8c00;
+        }
+
+        /* Konten Tengah */
+        .center-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #e6f3ff 50%, #fff5eb 100%);
+        }
+
+        .center-content h1 {
+            color: #ff6b00;
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .btn-link {
+            background: linear-gradient(135deg, #ff8c00 0%, #ff6b00 100%);
+            color: white;
+            border: none;
+            padding: 20px 60px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(255, 107, 0, 0.3);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 107, 0, 0.4);
+            background: linear-gradient(135deg, #ff6b00 0%, #ff8c00 100%);
+        }
+
+        .btn-link:active {
+            transform: translateY(0);
+        }
+
+        /* === HALAMAN KEDUA === */
+        #page2 {
+            display: none;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #ffffff 0%, #e6f3ff 100%);
+        }
+
+        .page2-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Video YouTube */
+        .video-section {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 150, 255, 0.1);
+            border: 2px solid #87ceeb;
+        }
+
+        .video-section h2 {
+            color: #0096ff;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Link Asli */
+        .link-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(255, 140, 0, 0.15);
+            border: 2px solid #ff8c00;
+            text-align: center;
+        }
+
+        .link-section h2 {
+            color: #ff6b00;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .link-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #00bfff 0%, #0096ff 100%);
+            color: white;
+            text-decoration: none;
+            padding: 18px 50px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 6px 20px rgba(0, 150, 255, 0.3);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .link-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 150, 255, 0.4);
+        }
+
+        /* Subscribe & Like */
+        .subscribe-section {
+            background: linear-gradient(135deg, #ff6b00 0%, #ff8c00 100%);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 6px 20px rgba(255, 107, 0, 0.3);
+        }
+
+        .subscribe-section h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .subscribe-btns {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .sub-btn {
+            background: white;
+            color: #ff6b00;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sub-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .back-btn {
+            background: #87ceeb;
+            color: #0066cc;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: #0096ff;
+            color: white;
+        }
+
+        /* Animasi */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== HALAMAN PERTAMA ==================== -->
+    <div id="page1">
+        
+        <!-- BANNER IKLAN ADSTERRA ATAS -->
+        <div class="adsterra-banner banner-top">
+            <script>
+                atOptions = {
+                    'key' : '064ebfc822a1f6373627eeafbee2678a',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                };
+            </script>
+            <script src="https://accumulaterehearsehealing.com/064ebfc822a1f6373627eeafbee2678a/invoke.js"></script>
+        </div>
+
+        <!-- KONTEN TENGAH -->
+        <div class="center-content">
+            <h1>🔥 Selamat Datang 🔥</h1>
+            <button class="btn-link" onclick="goToPage2()">
+                ➡️ KLIK LINK
+            </button>
+        </div>
+
+        <!-- BANNER IKLAN ADSTERRA BAWAH -->
+        <div class="adsterra-banner banner-bottom">
+            <script>
+                atOptions = {
+                    'key' : '064ebfc822a1f6373627eeafbee2678a',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                };
+            </script>
+            <script src="https://accumulaterehearsehealing.com/064ebfc822a1f6373627eeafbee2678a/invoke.js"></script>
+        </div>
+    </div>
+
+    <!-- ==================== HALAMAN KEDUA ==================== -->
+    <div id="page2">
+        <div class="page2-container">
+            
+            <button class="back-btn" onclick="goToPage1()">← Kembali</button>
+
+            <!-- VIDEO YOUTUBE -->
+            <div class="video-section animate-in">
+                <h2>DARI VIDIO🎬</h2>
+                <div class="video-wrapper">
+               <iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/4xdvHMBDtH4"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+                </div>
+            </div>
+
+            <!-- LINK ASLI -->
+            <div class="link-section animate-in">
+                <h2>🔗 LINK DOWNLOAD</h2>
+                <a href="https://link.adsafelink.com/luu6lY" target="_blank" class="link-btn">
+                    ⚡ KLIK MOD ⚡
+                </a>
+            </div>
+
+            <!-- SUBSCRIBE & LIKE -->
+            <div class="subscribe-section animate-in">
+                <h3>📌 Jangan Lupa!</h3>
+                <div class="subscribe-btns">
+                    <a href="https://www.youtube.com/@KZMODAPK" target="_blank" class="sub-btn">
+                       👍 LIKE 🔴 SUBSCRIBE
+                    </a>
+                    <a href="https://www.youtube.com/@KZMODAPK" target="_blank" class="sub-btn">
+                       🟢 Saluran WhatsApp 
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function goToPage2() {
+            document.getElementById('page1').style.display = 'none';
+            document.getElementById('page2').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function goToPage1() {
+            document.getElementById('page2').style.display = 'none';
+            document.getElementById('page1').style.display = 'flex';
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+</body>
+</html>
